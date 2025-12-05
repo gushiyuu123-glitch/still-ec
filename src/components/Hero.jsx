@@ -26,68 +26,133 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="w-full bg-white px-6 md:px-20 py-20 flex items-center justify-center"
+      className="
+        w-full 
+        bg-white 
+        px-6 md:px-16 
+        py-24 
+        flex items-center justify-center
+      "
     >
-      <div className="w-full max-w-8xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+      <div
+        className="
+          w-full 
+          max-w-[1500px] 
+          grid grid-cols-1 md:grid-cols-2 
+          gap-20 
+          items-center
+        "
+      >
 
-        {/* Left — Typography with faint background */}
-        <div className="relative flex flex-col space-y-6 p-10 md:translate-x-[-35px] md:-translate-y-[-55px]">
+        {/* ------------------------------------------------------ */}
+        {/* Left Block – Typographic × Background Image */}
+        {/* ------------------------------------------------------ */}
+        <div
+          className="
+            relative 
+            flex flex-col space-y-6 
+            p-10 
+            md:translate-x-[-40px] 
+            md:-translate-y-[-50px]
+          "
+        >
+          {/* 背景画像（大きめにスケール） */}
+          <img
+            src="/images/still-main.png"
+            alt=""
+            className="
+              absolute inset-0 
+              w-full h-full 
+              object-cover 
+              opacity-[0.45] 
+              pointer-events-none
+              scale-[1.12]
+              fade-up
+            "
+          />
 
-          {/* BACKGROUND IMAGE */}
-         {/* BACKGROUND IMAGE */}
-<img
-  src="/images/still-main.png"
-  alt=""
-  className="
-    absolute inset-0 w-full h-full 
-    object-cover 
-    opacity-[0.4] 
-    pointer-events-none 
-    fade-up
-    scale-110     /* ← 追加 */
-  "
-/>
-
-
-          <h1 className="text-5xl tracking-[0.25em] font-light relative z-10 fade-up delay-[0ms]">
+          <h1
+            className="
+              text-5xl md:text-[56px] 
+              tracking-[0.25em] 
+              font-light 
+              relative z-10 
+              fade-up delay-[0ms]
+            "
+          >
             S T I L L
           </h1>
 
-          <p className="text-gray-500 tracking-wide relative z-10 fade-up delay-[100ms]">
+          <p
+            className="
+              text-gray-500 
+              tracking-wide 
+              relative z-10 
+              fade-up delay-[100ms]
+            "
+          >
             Quiet, Refined, Essential.
           </p>
 
-          <div className="h-px w-24 bg-gray-300 mt-4 relative z-10 fade-up delay-[200ms]"></div>
+          <div
+            className="
+              h-px w-24 
+              bg-gray-300 
+              mt-4 
+              relative z-10 
+              fade-up delay-[200ms]
+            "
+          ></div>
 
-          <p className="text-sm leading-relaxed text-gray-600 max-w-sm relative z-10 fade-up delay-[300ms]">
+          <p
+            className="
+              text-sm text-gray-600 
+              leading-relaxed 
+              max-w-sm 
+              relative z-10 
+              fade-up delay-[300ms]
+            "
+          >
             A study of silence and form.
             Shapes, textures, and the quiet tension between them.
           </p>
         </div>
 
-        {/* Right — Main Editorial Photo */}
+        {/* ------------------------------------------------------ */}
+        {/* Right Block – Editorial Image */}
+        {/* ------------------------------------------------------ */}
         <div
           className="
-            relative
-            w-full h-[550px]
-            md:h-[650px]
-            md:w-[400px]
+            relative 
+            w-full 
+            h-[550px] md:h-[680px] 
+            md:w-[420px]
             overflow-hidden
-            transform
-            md:translate-x-[160px]
-            md:-translate-y-[-45px]
+            md:translate-x-[160px] 
+            md:-translate-y-[-50px]
           "
         >
-          {/* ← transform の影響を受けない fade 対象 */}
           <div className="fade-up delay-[200ms]">
             <img
               src="/images/still-main1.png"
-              alt="Editorial Fragment"
-              className="w-full h-full object-cover object-[60%_center] scale-110"
+              alt="Editorial"
+              className="
+                w-full h-full 
+                object-cover 
+                object-[60%_center] 
+                scale-[1.12]
+              "
             />
           </div>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-transparent pointer-events-none"></div>
+          <div
+            className="
+              absolute inset-0 
+              bg-gradient-to-b 
+              from-black/10 to-transparent 
+              pointer-events-none
+            "
+          ></div>
         </div>
 
       </div>
