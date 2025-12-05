@@ -34,7 +34,8 @@ export default function Hero() {
         <div className="relative flex flex-col space-y-6 p-10 md:translate-x-[-35px] md:-translate-y-[-55px]">
 
           {/* BACKGROUND IMAGE */}
-         <img
+         {/* BACKGROUND IMAGE */}
+<img
   src="/images/still-main.png"
   alt=""
   className="
@@ -43,7 +44,7 @@ export default function Hero() {
     opacity-[0.4] 
     pointer-events-none 
     fade-up
-    scale-110           // ← これ追加
+    scale-110     /* ← 追加 */
   "
 />
 
