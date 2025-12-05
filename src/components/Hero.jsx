@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 export default function Hero() {
   const heroRef = useRef(null);
 
+  // ===== フェードインアニメ：IntersectionObserver =====
   useEffect(() => {
     const root = heroRef.current;
     if (!root) return;
@@ -30,25 +31,23 @@ export default function Hero() {
       <div className="w-full max-w-8xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
         {/* Left — Typography with faint background */}
-        <div
-          className="
-            relative flex flex-col space-y-6 p-10 
-            md:translate-x-[-35px] 
-            md:-translate-y-[55px]   /* ← 修正！ */
-          "
-        >
-          {/* BACKGROUND IMAGE wrapper（ここに scale） */}
-          <div className="absolute inset-0 scale-[1.18] overflow-hidden fade-up">
-            <img
-              src="/images/still-main.png"
-              alt=""
-              className="
-                w-full h-full object-cover 
-                opacity-[0.4] 
-                pointer-events-none
-              "
-            />
-          </div>
+        <div className="relative flex flex-col space-y-6 p-10 md:translate-x-[-35px] md:-translate-y-[-55px]">
+
+          {/* BACKGROUND IMAGE */}
+         {/* BACKGROUND IMAGE */}
+<img
+  src="/images/still-main.png"
+  alt=""
+  className="
+    absolute inset-0 w-full h-full 
+    object-cover 
+    opacity-[0.4] 
+    pointer-events-none 
+    fade-up
+    scale-110     /* ← 追加 */
+  "
+/>
+
 
           <h1 className="text-5xl tracking-[0.25em] font-light relative z-10 fade-up delay-[0ms]">
             S T I L L
@@ -76,18 +75,15 @@ export default function Hero() {
             overflow-hidden
             transform
             md:translate-x-[160px]
-            md:-translate-y-[45px]   /* ← 修正 */
+            md:-translate-y-[-45px]
           "
         >
+          {/* ← transform の影響を受けない fade 対象 */}
           <div className="fade-up delay-[200ms]">
             <img
               src="/images/still-main1.png"
               alt="Editorial Fragment"
-              className="
-                w-full h-full object-cover 
-                object-[60%_center] 
-                scale-110
-              "
+              className="w-full h-full object-cover object-[60%_center] scale-110"
             />
           </div>
 
