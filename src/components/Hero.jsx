@@ -34,11 +34,19 @@ export default function Hero() {
         <div className="relative flex flex-col space-y-6 p-10 md:translate-x-[-35px] md:-translate-y-[-55px]">
 
           {/* BACKGROUND IMAGE */}
-          <img
-            src="/images/still-main.png"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover opacity-[0.4] pointer-events-none fade-up"
-          />
+         <img
+  src="/images/still-main.png"
+  alt=""
+  className="
+    absolute inset-0 w-full h-full 
+    object-cover 
+    opacity-[0.4] 
+    pointer-events-none 
+    fade-up
+    scale-110           // ← これ追加
+  "
+/>
+
 
           <h1 className="text-5xl tracking-[0.25em] font-light relative z-10 fade-up delay-[0ms]">
             S T I L L
