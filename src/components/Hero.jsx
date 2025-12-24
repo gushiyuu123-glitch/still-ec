@@ -70,18 +70,18 @@ export default function Hero() {
               fade-up
             "
           />
+<h1
+  className="
+    text-[38px] md:text-[56px]
+    tracking-[0.12em] md:tracking-[0.25em]
+    font-light 
+    relative z-10 
+    fade-up delay-[0ms]
+  "
+>
+  S T I L L
+</h1>
 
-          <h1
-            className="
-              text-5xl md:text-[56px] 
-              tracking-[0.25em] 
-              font-light 
-              relative z-10 
-              fade-up delay-[0ms]
-            "
-          >
-            S T I L L
-          </h1>
 
           <p
             className="
