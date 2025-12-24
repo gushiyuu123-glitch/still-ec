@@ -53,7 +53,7 @@ export default function Footer() {
           <p>
             Designed by{" "}
             <a
-              href="https://gushiken.design"
+              href="https://gushikendesign.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 hover:underline text-neutral-500 hover:text-neutral-700 transition"
