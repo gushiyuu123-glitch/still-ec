@@ -3,49 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
 
-    <!-- =============================== -->
-    <!-- Title / Basic SEO -->
-    <!-- =============================== -->
+    <!-- ===============================
+         Primary SEO
+    =============================== -->
     <title>STILL — Quiet, Refined, Essential.</title>
-    <meta name="description" content="A study of silence, form, and refined minimal tension." />
+    <meta
+      name="description"
+      content="A study of silence and form. Refined minimal fashion essentials with quiet tension."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://still-ec.vercel.app/" />
 
-    <!-- =============================== -->
-    <!-- Favicon & Icons -->
-    <!-- =============================== -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- Optional: If you have a preferred URL later, keep it consistent -->
+    <meta name="theme-color" content="#f6f5f2" />
+
+    <!-- ===============================
+         Favicon & App Icons (public/)
+    =============================== -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- =============================== -->
-    <!-- OGP -->
-    <!-- =============================== -->
-    <meta property="og:title" content="STILL — Quiet, Refined, Essential." />
-    <meta property="og:description" content="A study of silence, form, and refined minimal tension." />
-    <meta property="og:image" content="/ogp.png" />
+    <!-- ===============================
+         Open Graph (OGP)
+    =============================== -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="STILL" />
+    <meta property="og:title" content="STILL — Quiet, Refined, Essential." />
+    <meta
+      property="og:description"
+      content="A study of silence and form. Refined minimal fashion essentials with quiet tension."
+    />
     <meta property="og:url" content="https://still-ec.vercel.app/" />
+    <meta property="og:image" content="https://still-ec.vercel.app/ogp.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- =============================== -->
-    <!-- Twitter Card -->
-    <!-- =============================== -->
+    <!-- ===============================
+         Twitter Card
+    =============================== -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="STILL — Quiet, Refined, Essential." />
-    <meta name="twitter:description" content="A study of silence and form." />
-    <meta name="twitter:image" content="/ogp.png" />
+    <meta
+      name="twitter:description"
+      content="A study of silence and form. Refined minimal fashion essentials with quiet tension."
+    />
+    <meta name="twitter:image" content="https://still-ec.vercel.app/ogp.png" />
 
-    <!-- =============================== -->
-    <!-- Styling (Vite injects CSS automatically) -->
-    <!-- =============================== -->
+    <!-- ===============================
+         Fonts (if needed)
+         ※ もうプロジェクト側で管理してるなら消してOK
+    =============================== -->
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    -->
 
-    <!-- =============================== -->
-    <!-- App -->
-    <!-- =============================== -->
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- ===============================
+         Structured Data (Brand / Website)
+    =============================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "STILL",
+        "url": "https://still-ec.vercel.app/",
+        "description": "Quiet, refined, essential — minimal fashion with silent tension.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "STILL",
+          "url": "https://still-ec.vercel.app/"
+        }
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

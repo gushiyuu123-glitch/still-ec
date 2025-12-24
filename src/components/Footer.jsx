@@ -1,14 +1,12 @@
 export default function Footer() {
-  const links = ["ABOUT", "CONTACT", "PRIVACY"];
-
   return (
     <footer className="w-full border-t border-neutral-200/60 mt-32">
       <div className="max-w-7xl mx-auto px-6 md:px-20 py-20">
 
-        {/* 上部リンクエリア */}
+        {/* ===== TOP AREA ===== */}
         <div className="flex flex-col md:flex-row justify-between gap-10">
 
-          {/* ブランドメッセージ */}
+          {/* BRAND MESSAGE */}
           <div className="space-y-3">
             <h4 className="text-sm tracking-[0.15em] text-neutral-700">
               STILL
@@ -19,27 +17,50 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* リンク */}
+          {/* LINKS */}
           <div className="flex gap-8 text-xs tracking-wide">
-            {links.map((link) => (
-              <button
-                key={link}
-                className="
-                  text-neutral-500 
-                  hover:text-black 
-                  transition-colors
-                "
-              >
-                {link}
-              </button>
-            ))}
+            <a
+              href="/about"
+              className="text-neutral-500 hover:text-black transition-colors"
+            >
+              ABOUT
+            </a>
+
+            <a
+              href="/contact"
+              className="text-neutral-500 hover:text-black transition-colors"
+            >
+              CONTACT
+            </a>
+
+            <a
+              href="/privacy"
+              className="text-neutral-500 hover:text-black transition-colors"
+            >
+              PRIVACY
+            </a>
           </div>
 
         </div>
 
-        {/* ボトム（コピーライト） */}
-        <div className="pt-16 text-[11px] text-neutral-400">
-          © STILL — Quiet, Refined, Essential.
+        {/* ===== BOTTOM AREA ===== */}
+        <div className="pt-16 text-[11px] text-neutral-400 space-y-1">
+
+          {/* コピーライト */}
+          <p>© {new Date().getFullYear()} STILL — Quiet, Refined, Essential.</p>
+
+          {/* ▼ あなたのリンク（上品で控えめ） */}
+          <p>
+            Designed by{" "}
+            <a
+              href="https://gushiken.design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-2 hover:underline text-neutral-500 hover:text-neutral-700 transition"
+            >
+              GUSHIKEN DESIGN
+            </a>
+          </p>
         </div>
 
       </div>
